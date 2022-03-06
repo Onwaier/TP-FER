@@ -64,10 +64,10 @@ python train.py --setup_seed 7777 --warm_epoch 5 --relabel_epoch 8 --alpha1 0.60
 note: <font color='red'>Before running this script, you need to prepare the dataset and pre-trained file, and modify the corresponding path in the code.</font> 
 
 ```plain
-python train.py --setup_seed 7777 --warm_epoch 84 --relabel_epoch 84 --alpha1 0.60 --alpha2 0.80 --dataset FERPlus --epochs 200 --batch_size 64 --lr 0.01 --gpu 3 --num_classes 7 --transform_type 1 --optimizer sgd --scheduler step --step_size 5
+python train.py --setup_seed 7777 --warm_epoch 95 --relabel_epoch 100 --alpha1 0.60 --alpha2 0.80 --dataset FERPlus --epochs 200 --batch_size 64 --lr 0.01 --gpu 3 --num_classes 7 --transform_type 1 --optimizer sgd --scheduler step --step_size 5
 ```
 
-`./log/[02-19]-[20-30]-[44]-log.txt` file records the details of my training on the FER2013 dataset.
+`./log/[03-06]-[12-32]-[45]-log.txt` file records the details of my training on the FER2013 dataset.
 
 **Train the model with AffectNet**
 
@@ -77,7 +77,7 @@ note: <font color='red'>Before running this script, you need to prepare the data
 python train.py --setup_seed 7777 --warm_epoch 1000 --relabel_epoch 2 --alpha1 0.60 --alpha2 0.80 --dataset Affect --epochs 10 --batch_size 64 --lr 0.0005 --gpu 0 --num_classes 8 --with_align --transform_type 1
 ```
 
-`./log/[02-20]-[17-59]-[57]-log.txt` file records the details of my training on the FER2013 dataset.
+`./log/[02-20]-[17-59]-[57]-log.txt` file records the details of my training on the AffectNet dataset.
 
 ## Test
 Download the checkpoint file about the RAF-DB dataset from [this](https://drive.google.com/file/d/1n0evGFPBRWZ-KOxHVomwG3k5xqNU7AT2/view?usp=sharing) and put it into the `checkpoints` directory.
