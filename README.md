@@ -1,5 +1,5 @@
-# Two Labels Learning for Facial Expression Recognition 
-Official implementation about Two Label Learning (TTL)
+# TP-FER: An Effective Three-phase Noise-tolerant Recognizer for Facial Expression Recognition
+Official implementation about TP-FER
 
 ## Train
 We train TTL with Torch 1.9.0 and torchvision 0.10.0
