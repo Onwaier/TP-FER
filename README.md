@@ -2,7 +2,7 @@
 Official implementation about TP-FER
 
 ## Train
-We train TTL with Torch 1.9.0 and torchvision 0.10.0
+We train TP-FER with Torch 1.9.0 and torchvision 0.10.0
 
 **Dataset**
 Download [RAF-DB](http://www.whdeng.cn/RAF/model1.html#dataset), and make sure that it has the same structure as bellow:
@@ -64,10 +64,10 @@ python train.py --setup_seed 7777 --warm_epoch 5 --relabel_epoch 8 --alpha1 0.60
 note: <font color='red'>Before running this script, you need to prepare the dataset and pre-trained file, and modify the corresponding path in the code.</font> 
 
 ```plain
-python train.py --setup_seed 7777 --warm_epoch 95 --relabel_epoch 100 --alpha1 0.60 --alpha2 0.80 --dataset FERPlus --epochs 200 --batch_size 64 --lr 0.01 --gpu 3 --num_classes 7 --transform_type 1 --optimizer sgd --scheduler step --step_size 5
+python train_clean.py --setup_seed 7777 --warm_epoch 95 --relabel_epoch 100 --alpha1 0.60 --alpha2 0.80 --margin_2 0.2 --dataset FERPlus --epochs 500 --batch_size 64 --lr 0.01 --gpu 2 --num_classes 7 --transform_type 1 --optimizer sgd --scheduler step --step_size 5
 ```
 
-`./log/[03-06]-[12-32]-[45]-log.txt` file records the details of my training on the FER2013 dataset.
+`./log/[03-08]-[10-19]-[59]-log.txt` file records the details of my training on the FER2013 dataset.
 
 **Train the model with AffectNet**
 
